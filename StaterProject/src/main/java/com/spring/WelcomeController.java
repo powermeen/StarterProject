@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.constant.PageRegister;
+import com.common.constant.PageRegister;
 import com.module.login.LoginPresenter;
 import com.shared.LoginBean;
 
@@ -30,12 +30,12 @@ public class WelcomeController {
 
 	@RequestMapping(value = "/login")
 	public ModelAndView login(@ModelAttribute("loginModel") LoginBean loginBean, Model model) {
+		
 		ModelAndView modelAndView = new ModelAndView();
-	
-		String page = PageRegister.LOGIN.getPath();
-		modelAndView.setViewName(page);
 		
 		LoginPresenter loginPresenter =new LoginPresenter(loginBean);
+		
+		modelAndView = loginPresenter.getModelAndView();
 		
 		return modelAndView;
 	}

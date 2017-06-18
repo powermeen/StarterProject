@@ -1,4 +1,4 @@
-package com.constant;
+package com.common.constant;
 
 public enum PageRegister {
 
