@@ -5,3 +5,14 @@ h1{
 h2{
 	color:#FF0000;
 }
+
+@import url('/bootstrap.min.css');
+
+@import url('/font-awesome.min.css');
+
+@import url('/fonts.googleapis.com.css');
+
+@import url('/ace.min.css');
+
+@import url('/ace-rtl.min.css');
+
