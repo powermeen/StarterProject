@@ -138,7 +138,7 @@
 												</label>
 												<div class="clearfix">
 													<button
-														type="submit"
+														type="button"
 														class="width-35 pull-right btn btn-sm btn-danger">
 														<i class="ace-icon fa fa-lightbulb-o"></i> <span class="bigger-110">Send Me!</span>
 													</button>
@@ -210,7 +210,7 @@
 														<i class="ace-icon fa fa-refresh"></i> <span class="bigger-110">Reset</span>
 													</button>
 													<button
-														type="submit"
+														type="button"
 														class="width-65 pull-right btn btn-sm btn-success">
 														<span class="bigger-110">Register</span> <i class="ace-icon fa fa-arrow-right icon-on-right"></i>
 													</button>

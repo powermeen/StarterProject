@@ -27,7 +27,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		
+
 		<!-- Web with Tomcat + Embed -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -63,6 +63,14 @@
 			<version>3.3.7</version>
 		</dependency>
 
+
+<!-- 	String util -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.0</version>
+		</dependency>
+
 	</dependencies>
 	<build>
 		<plugins>
@@ -71,7 +79,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			
+
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.3</version>

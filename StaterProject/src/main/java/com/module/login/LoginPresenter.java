@@ -4,6 +4,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.common.constant.PageRegister;
 import com.common.interfaces.Presenter;
+import com.common.util.ValidationUtils;
 import com.shared.LoginBean;
 
 public class LoginPresenter implements Presenter{
@@ -17,7 +18,8 @@ public class LoginPresenter implements Presenter{
 		this.loginBean = loginBean;
 		
 		setupData();
-		setupPage();
+		
+		
 		setupAction();
 		
 		
@@ -30,8 +32,8 @@ public class LoginPresenter implements Presenter{
 	}
 
 	@Override
-	public void setupPage() {
-		String page = PageRegister.LOGIN.getPath();
+	public void setupPage(String page) {
+		
 		modelAndView.setViewName(page);
 		
 	}
@@ -44,8 +46,18 @@ public class LoginPresenter implements Presenter{
 
 	@Override
 	public void setupAction() {
-		// TODO Auto-generated method stub
 		
+		boolean isvalid = isAuthentication(); 
+		
+		if(isvalid){
+			String page = PageRegister.LOGIN.getPath();
+			modelAndView.setViewName(page);
+		}
+	}
+
+	private boolean isAuthentication() {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 	

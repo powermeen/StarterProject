@@ -2,13 +2,17 @@ package com.common.interfaces;
 
 import org.springframework.web.servlet.ModelAndView;
 
-public interface Presenter {
+public abstract class Presenter {
 
-	public ModelAndView getModelAndView();
+	private ModelAndView modelAndView = new ModelAndView();
+	
+	public Presenter(Object bean) {
+		
+	}
 
-	public void setupPage();
-
-	public void setupData();
-
-	public void setupAction();
+	public void setupPage(String page) {
+		modelAndView.setViewName(page);
+	}
+	
+	
 }
