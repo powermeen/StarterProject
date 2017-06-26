@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.common.constant.PageRegister;
-import com.module.login.ForgotPasswordPresenter;
-import com.module.login.LoginPresenter;
-import com.module.login.RegisterPresenter;
+import com.module.login.presenter.ForgotPasswordPresenter;
+import com.module.login.presenter.LoginPresenter;
+import com.module.login.presenter.RegisterPresenter;
 import com.shared.LoginBean;
 
 @Controller
@@ -51,7 +51,7 @@ public class LoginController {
 		
 		ForgotPasswordPresenter forgotPassword = new ForgotPasswordPresenter(loginBean);
 		
-		modelAndView = forgotPassword.getModelAndView();
+		//modelAndView = forgotPassword.getModelAndView();
 		
 		return modelAndView;
 	}
@@ -63,7 +63,7 @@ public class LoginController {
 		
 		RegisterPresenter registerPresenter = new RegisterPresenter(loginBean);
 		
-		modelAndView = registerPresenter.getModelAndView();
+		//modelAndView = registerPresenter.getModelAndView();
 		
 		return modelAndView;
 	}
