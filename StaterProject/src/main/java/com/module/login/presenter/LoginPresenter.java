@@ -22,8 +22,9 @@ public class LoginPresenter implements Presenter {
 
 		this.loginBean = loginBean;
 
-		eventHandler();
 		setupdefaultPage();
+		eventHandler();
+		
 
 	}
 
@@ -57,13 +58,11 @@ public class LoginPresenter implements Presenter {
 
 	private void authentication() {
 
-		boolean isvalid = loginService.authenticationToSystem();
+		boolean isvalid = loginService.authenticationToSystem(loginBean);
 
 		if (isvalid) {
 			String page = PageRegister.WELLCOME.getPath();
 			setupPage(page);
-		}else {
-			setupdefaultPage();
 		}
 
 	}
