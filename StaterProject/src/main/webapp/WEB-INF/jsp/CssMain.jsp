@@ -27,6 +27,18 @@
 <spring:url value="/assets/css/ace-rtl.min.css" var="aceRtlCSS" />
 <link  type="text/css" rel="stylesheet" href="${aceRtlCSS}"  />
 
+<spring:url value="/assets/css/prettify.min.css" var="prettifyMinCSS" />
+<link  type="text/css" rel="stylesheet" href="${prettifyMinCSS}"  />
+
+<spring:url value="/assets/css/ace.min.css" var="aceMinCSS" />
+<link  type="text/css" rel="stylesheet" href="${aceMinCSS}"  />
+
+<spring:url value="/assets/css/ace-skins.min.css" var="aceSkinsMinCSS" />
+<link  type="text/css" rel="stylesheet" href="${aceSkinsMinCSS}"  />
+
+<spring:url value="/assets/css/ace-rtl.min.css" var="aceRtlMinCSS" />
+<link  type="text/css" rel="stylesheet" href="${aceRtlMinCSS}"  />
+
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 
 

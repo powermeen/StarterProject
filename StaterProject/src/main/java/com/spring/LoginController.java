@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.common.constant.PageRegister;
-import com.module.login.presenter.ForgotPasswordPresenter;
-import com.module.login.presenter.LoginPresenter;
-import com.module.login.presenter.RegisterPresenter;
+import com.module.login.presenter.login.ForgotPasswordPresenter;
+import com.module.login.presenter.login.LoginPresenter;
+import com.module.login.presenter.login.RegisterPresenter;
 import com.shared.LoginBean;
 
 @Controller

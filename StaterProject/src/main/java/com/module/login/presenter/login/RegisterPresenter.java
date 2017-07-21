@@ -1,4 +1,4 @@
-package com.module.login.presenter;
+package com.module.login.presenter.login;
 
 import org.springframework.web.servlet.ModelAndView;
 
@@ -6,17 +6,18 @@ import com.common.constant.PageRegister;
 import com.common.interfaces.Presenter;
 import com.shared.LoginBean;
 
-public class ForgotPasswordPresenter  {
+public class RegisterPresenter {
 
 	private LoginBean loginBean;
 
 	private ModelAndView modelAndView = new ModelAndView();
 
-	public ForgotPasswordPresenter(LoginBean loginBean) {
-		this.loginBean = loginBean ; 
+	public RegisterPresenter(LoginBean loginBean) {
+		this.loginBean = loginBean;
 		
-		
+	
 	}
 
-	
+
+
 }

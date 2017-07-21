@@ -1,4 +1,4 @@
-package com.module.login.presenter;
+package com.module.login.presenter.login;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.servlet.ModelAndView;

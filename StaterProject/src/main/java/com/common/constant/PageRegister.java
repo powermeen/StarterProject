@@ -6,7 +6,9 @@ public enum PageRegister {
 
 	
 	WELLCOME("welcome","welcome"),
-	LOGIN("login","Login");
+	LOGIN("login","Login"),
+	ASSIST_TOOL_OPEN_LINK("assitToolOpenLink","AssistToolOpenLink"),
+	;
 	
 	
 	
